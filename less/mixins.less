@@ -1,1 +1,19 @@
 // Mixins in here
+.btnStyle(@bg-color:#008080, @width:200px, @font-color:white){
+        display: block;
+        background-color: @bg-color;
+        cursor: pointer;
+        width: @width;
+        font-size: 2rem;
+        border-radius: 10px;
+        color:@font-color;
+        text-align: center;
+        padding: 5%;
+       
+        
+        &:hover{
+          background-color:@font-color;
+          color:@bg-color;
+          
+        }
+}
